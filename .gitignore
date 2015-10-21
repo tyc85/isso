@@ -9,6 +9,7 @@
 .Python
 .sass-cache
 .vagrant
+.idea
 
 /bin
 /include
