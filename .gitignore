@@ -11,6 +11,8 @@
 .vagrant
 .idea
 
+node_modules/
+
 /bin
 /include
 /lib

@@ -6,12 +6,11 @@ define(["app/dom", "app/utils", "app/config", "app/api", "app/jade", "app/i18n",
     "use strict";
 
     var Postbox = function(parent) {
-
         var localStorage = utils.localStorageImpl,
             el = $.htmlify(jade.render("postbox", {
-            "author":  JSON.parse(localStorage.getItem("author")),
-            "email":   JSON.parse(localStorage.getItem("email")),
-            "website": JSON.parse(localStorage.getItem("website"))
+            "author":  document.getElementById("dom_username").value, //JSON.parse(localStorage.getItem("author")),
+            "email":   document.getElementById("dom_email").value, //JSON.parse(localStorage.getItem("email")),
+            "website": ""//JSON.parse(localStorage.getItem("website"))
         }));
 
         // callback on success (e.g. to toggle the reply button)
