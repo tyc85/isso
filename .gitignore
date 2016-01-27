@@ -6,6 +6,7 @@
 # *~
 
 *.pyc
+.swp
 .Python
 .sass-cache
 .vagrant
